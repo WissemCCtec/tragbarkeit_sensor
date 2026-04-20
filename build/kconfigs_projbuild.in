@@ -1,0 +1,6 @@
+source "/home/wissem/esp-idf/components/bootloader/Kconfig.projbuild"
+source "/home/wissem/esp-idf/components/esp_app_format/Kconfig.projbuild"
+source "/home/wissem/esp-idf/components/esp_rom/Kconfig.projbuild"
+source "/home/wissem/esp-idf/components/esptool_py/Kconfig.projbuild"
+source "/home/wissem/esp-idf/components/partition_table/Kconfig.projbuild"
+source "/home/wissem/esp-idf/examples/bluetooth/bluedroid/ble/gatt_server/main/Kconfig.projbuild"

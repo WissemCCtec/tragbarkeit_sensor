@@ -1,0 +1,622 @@
+[0;32mI (127) esp_image: segment 1: paddr=00034fac vaddr=3fc973ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x28 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40056f81
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x178c
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xcbc
+load:0x403cc700,len:0x2da0
+entry 0x403c9914
+[0;32mI (26) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Apr 20 2026 09:13:54[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (80) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c080020 size=24f84h (151428) map[0m
+[0;32mI (127) esp_image: segment 1: paddr=00034fac vaddr=3fc97300 size=03f20h ( 16160) load[0m
+[0;32mI (131) esp_image: segment 2: paddr=00038ed4 vaddr=40374000 size=07144h ( 28996) load[0m
+[0;32mI (139) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=7cde0h (511456) map[0m
+[0;32mI (233) esp_image: segment 4: paddr=000bce08 vaddr=4037b144 size=0c10ch ( 49420) load[0m
+[0;32mI (244) esp_image: segment 5: paddr=000c8f1c vaddr=600fe010 size=00004h (     4) load[0m
+[0;32mI (252) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (253) boot: Disabling RNG early entropy source...[0m
+[0;32mI (264) cpu_start: Multicore app[0m
+[0;32mI (274) cpu_start: Pro cpu start user code[0m
+[0;32mI (274) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (274) cpu_start: Application information:[0m
+[0;32mI (277) cpu_start: Project name:     gatt_server_demos[0m
+[0;32mI (283) cpu_start: App version:      v5.2.1-dirty[0m
+[0;32mI (288) cpu_start: Compile time:     Apr 20 2026 09:13:46[0m
+[0;32mI (294) cpu_start: ELF file SHA256:  b3f454df1...[0m
+[0;32mI (299) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (305) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (310) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (314) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (319) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (326) heap_init: At 3FC9F358 len 0004A3B8 (296 KiB): RAM[0m
+[0;32mI (332) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (339) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (345) heap_init: At 600FE014 len 00001FD4 (7 KiB): RTCRAM[0m
+[0;32mI (352) spi_flash: detected chip: generic[0m
+[0;32mI (356) spi_flash: flash io: dio[0m
+[0;33mW (360) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (373) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (380) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (387) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (392) coexist: coexist rom version e7ae62f[0m
+[0;32mI (397) main_task: Started on CPU0[0m
+[0;32mI (407) main_task: Calling app_main()[0m
+[0;32mI (417) BLE_INIT: BT controller compile version [30b57c4][0m
+[0;32mI (427) BLE_INIT: Bluetooth MAC: 1c:db:d4:83:7d:f2[0m
+[0;32mI (427) phy_init: phy_version 640,cd64a1a,Jan 24 2024,17:28:12[0m
+[0;32mI (487) GATTS_DEMO: REGISTER_APP_EVT, status 0, app_id 0[0m
+[0;32mI (497) GATTS_DEMO: CREATE_SERVICE_EVT, status 0,  service_handle 40[0m
+[0;32mI (497) GATTS_DEMO: SERVICE_START_EVT, status 0, service_handle 40[0m
+[0;32mI (497) GATTS_DEMO: ADD_CHAR_EVT, status 0,  attr_handle 42, service_handle 40[0m
+[0;32mI (507) GATTS_DEMO: the gatts demo char length = 3[0m
+[0;32mI (507) GATTS_DEMO: prf_char[0] =11[0m
+[0;32mI (517) GATTS_DEMO: prf_char[1] =22[0m
+[0;32mI (517) GATTS_DEMO: prf_char[2] =33[0m
+[0;32mI (527) GATTS_DEMO: ADD_DESCR_EVT, status 0, attr_handle 43, service_handle 40[0m
+[0;32mI (537) GATTS_DEMO: REGISTER_APP_EVT, status 0, app_id 1[0m
+[0;32mI (537) GATTS_DEMO: CREATE_SERVICE_EVT, status 0,  service_handle 44[0m
+[0;32mI (547) GATTS_DEMO: SERVICE_START_EVT, status 0, service_handle 44[0m
+[0;32mI (547) GATTS_DEMO: ADD_CHAR_EVT, status 0,  attr_handle 46, service_handle 44[0m
+[0;32mI (557) GATTS_DEMO: ADD_DESCR_EVT, status 0, attr_handle 47, service_handle 44[0m
+[0;32mI (567) TMP36: Temp=24.70°C[0m
+[0;32mI (567) main_task: Returned from app_main()[0m
+[0;32mI (1567) TMP36: Temp=24.54°C[0m
+[0;32mI (2567) TMP36: Temp=25.19°C[0m
+[0;32mI (3567) TMP36: Temp=25.19°C[0m
+[0;32mI (4567) TMP36: Temp=25.19°C[0m
+[0;32mI (5567) TMP36: Temp=25.19°C[0m
+[0;32mI (6567) TMP36: Temp=24.70°C[0m
+[0;32mI (7567) TMP36: Temp=25.35°C[0m
+[0;32mI (8567) TMP36: Temp=25.35°C[0m
+[0;32mI (9567) TMP36: Temp=25.35°C[0m
+[0;32mI (10567) TMP36: Temp=25.35°C[0m
+[0;32mI (11567) TMP36: Temp=25.35°C[0m
+[0;32mI (12567) TMP36: Temp=25.27°C[0m
+[0;32mI (13567) TMP36: Temp=25.19°C[0m
+[0;32mI (13947) GATTS_DEMO: ESP_GATTS_CONNECT_EVT, conn_id 0, remote 5c:83:f6:d9:3c:22:[0m
+[0;32mI (13947) GATTS_DEMO: CONNECT_EVT, conn_id 0, remote 5c:83:f6:d9:3c:22:[0m
+[0;32mI (14037) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (14037) GATTS_DEMO: ESP_GATTS_MTU_EVT, MTU 500[0m
+[0;32mI (14277) GATTS_DEMO: update connection params status = 0, min_int = 16, max_int = 32,conn_int = 24,latency = 0, timeout = 400[0m
+[0;32mI (14567) TMP36: Temp=24.62°C[0m
+[0;32mI (14847) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (14907) GATTS_DEMO: GATT_READ_EVT, conn_id 0, trans_id 3, handle 47[0m
+[0;32mI (15567) TMP36: Temp=25.27°C[0m
+[0;32mI (16567) TMP36: Temp=25.03°C[0m
+[0;32mI (17567) TMP36: Temp=25.19°C[0m
+[0;32mI (18567) TMP36: Temp=25.19°C[0m
+[0;32mI (19567) TMP36: Temp=25.19°C[0m
+[0;32mI (20307) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (20567) TMP36: Temp=25.19°C[0m
+[0;32mI (21567) TMP36: Temp=24.54°C[0m
+[0;32mI (22527) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (22567) TMP36: Temp=25.11°C[0m
+[0;32mI (23187) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (23567) TMP36: Temp=25.19°C[0m
+[0;32mI (24567) TMP36: Temp=24.70°C[0m
+[0;32mI (25567) TMP36: Temp=25.03°C[0m
+[0;32mI (25947) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (26547) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (26567) TMP36: Temp=24.54°C[0m
+[0;32mI (27567) TMP36: Temp=24.22°C[0m
+[0;32mI (28567) TMP36: Temp=25.03°C[0m
+[0;32mI (29567) TMP36: Temp=25.03°C[0m
+[0;32mI (30567) TMP36: Temp=24.70°C[0m
+[0;32mI (31567) TMP36: Temp=25.03°C[0m
+[0;32mI (32567) TMP36: Temp=24.54°C[0m
+[0;32mI (33567) TMP36: Temp=24.54°C[0m
+[0;32mI (34567) TMP36: Temp=24.70°C[0m
+[0;32mI (35567) TMP36: Temp=24.22°C[0m
+[0;32mI (36567) TMP36: Temp=25.43°C[0m
+[0;32mI (37567) TMP36: Temp=25.03°C[0m
+[0;32mI (38567) TMP36: Temp=24.70°C[0m
+[0;32mI (39567) TMP36: Temp=24.46°C[0m
+[0;32mI (40567) TMP36: Temp=24.70°C[0m
+[0;32mI (41567) TMP36: Temp=25.11°C[0m
+[0;32mI (42567) TMP36: Temp=25.19°C[0m
+[0;32mI (43567) TMP36: Temp=24.70°C[0m
+[0;32mI (44567) TMP36: Temp=24.62°C[0m
+[0;32mI (45567) TMP36: Temp=24.38°C[0m
+[0;32mI (46567) TMP36: Temp=24.54°C[0m
+[0;32mI (47567) TMP36: Temp=25.35°C[0m
+[0;32mI (48567) TMP36: Temp=25.11°C[0m
+[0;32mI (49567) TMP36: Temp=24.78°C[0m
+[0;32mI (50567) TMP36: Temp=24.70°C[0m
+[0;32mI (51567) TMP36: Temp=24.70°C[0m
+[0;32mI (52517) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (52567) TMP36: Temp=25.03°C[0m
+[0;32mI (53147) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (53567) TMP36: Temp=25.03°C[0m
+[0;32mI (54567) TMP36: Temp=24.54°C[0m
+[0;32mI (55567) TMP36: Temp=25.03°C[0m
+[0;32mI (56567) TMP36: Temp=25.35°C[0m
+[0;32mI (57077) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (57567) TMP36: Temp=24.95°C[0m
+[0;32mI (58567) TMP36: Temp=25.51°C[0m
+[0;32mI (59567) TMP36: Temp=25.35°C[0m
+[0;32mI (60567) TMP36: Temp=25.03°C[0m
+[0;32mI (61567) TMP36: Temp=25.03°C[0m
+[0;32mI (62567) TMP36: Temp=24.70°C[0m
+[0;32mI (63567) TMP36: Temp=24.78°C[0m
+[0;32mI (64567) TMP36: Temp=24.70°C[0m
+[0;32mI (65567) TMP36: Temp=24.70°C[0m
+[0;32mI (66567) TMP36: Temp=24.46°C[0m
+[0;32mI (67567) TMP36: Temp=25.35°C[0m
+[0;32mI (68567) TMP36: Temp=25.11°C[0m
+[0;32mI (69567) TMP36: Temp=25.03°C[0m
+[0;32mI (70567) TMP36: Temp=24.62°C[0m
+[0;32mI (71567) TMP36: Temp=24.54°C[0m
+[0;32mI (72567) TMP36: Temp=24.54°C[0m
+[0;32mI (73567) TMP36: Temp=24.70°C[0m
+[0;32mI (74567) TMP36: Temp=25.35°C[0m
+[0;32mI (75567) TMP36: Temp=25.03°C[0m
+[0;32mI (76567) TMP36: Temp=25.19°C[0m
+[0;32mI (77567) TMP36: Temp=25.19°C[0m
+[0;32mI (78567) TMP36: Temp=25.19°C[0m
+[0;32mI (79567) TMP36: Temp=25.35°C[0m
+[0;32mI (80567) TMP36: Temp=25.11°C[0m
+[0;32mI (81567) TMP36: Temp=25.11°C[0m
+[0;32mI (82567) TMP36: Temp=24.54°C[0m
+[0;32mI (83567) TMP36: Temp=24.54°C[0m
+[0;32mI (84567) TMP36: Temp=24.54°C[0m
+[0;32mI (85567) TMP36: Temp=25.19°C[0m
+[0;32mI (86567) TMP36: Temp=25.35°C[0m
+[0;32mI (87567) TMP36: Temp=25.51°C[0m
+[0;32mI (88567) TMP36: Temp=24.54°C[0m
+[0;32mI (89567) TMP36: Temp=26.64°C[0m
+[0;32mI (90567) TMP36: Temp=24.54°C[0m
+[0;32mI (91567) TMP36: Temp=24.54°C[0m
+[0;32mI (92567) TMP36: Temp=24.38°C[0m
+[0;32mI (93567) TMP36: Temp=25.27°C[0m
+[0;32mI (94567) TMP36: Temp=25.19°C[0m
+[0;32mI (95567) TMP36: Temp=25.19°C[0m
+[0;32mI (96567) TMP36: Temp=25.19°C[0m
+[0;32mI (97567) TMP36: Temp=25.03°C[0m
+[0;32mI (98567) TMP36: Temp=25.19°C[0m
+[0;32mI (99567) TMP36: Temp=25.03°C[0m
+[0;32mI (100567) TMP36: Temp=24.70°C[0m
+[0;32mI (101567) TMP36: Temp=24.54°C[0m
+[0;32mI (102567) TMP36: Temp=25.35°C[0m
+[0;32mI (103567) TMP36: Temp=25.27°C[0m
+[0;32mI (104567) TMP36: Temp=25.11°C[0m
+[0;32mI (105567) TMP36: Temp=25.19°C[0m
+[0;32mI (106567) TMP36: Temp=25.35°C[0m
+[0;32mI (107567) TMP36: Temp=25.19°C[0m
+[0;32mI (108567) TMP36: Temp=24.38°C[0m
+[0;32mI (109567) TMP36: Temp=24.38°C[0m
+[0;32mI (110567) TMP36: Temp=24.78°C[0m
+[0;32mI (111567) TMP36: Temp=25.19°C[0m
+[0;32mI (112567) TMP36: Temp=25.19°C[0m
+[0;32mI (113567) TMP36: Temp=25.27°C[0m
+[0;32mI (114567) TMP36: Temp=25.27°C[0m
+[0;32mI (115567) TMP36: Temp=24.70°C[0m
+[0;32mI (116567) TMP36: Temp=25.03°C[0m
+[0;32mI (117567) TMP36: Temp=24.78°C[0m
+[0;32mI (118567) TMP36: Temp=24.70°C[0m
+[0;32mI (119567) TMP36: Temp=25.19°C[0m
+[0;32mI (120567) TMP36: Temp=24.54°C[0m
+[0;32mI (121567) TMP36: Temp=25.11°C[0m
+[0;32mI (122567) TMP36: Temp=25.19°C[0m
+[0;32mI (123567) TMP36: Temp=25.11°C[0m
+[0;32mI (124567) TMP36: Temp=25.03°C[0m
+[0;32mI (125567) TMP36: Temp=25.11°C[0m
+[0;32mI (126567) TMP36: Temp=25.03°C[0m
+[0;32mI (127567) TMP36: Temp=25.19°C[0m
+[0;32mI (128567) TMP36: Temp=24.54°C[0m
+[0;32mI (129567) TMP36: Temp=25.19°C[0m
+[0;32mI (130567) TMP36: Temp=24.78°C[0m
+[0;32mI (131567) TMP36: Temp=24.78°C[0m
+[0;32mI (132567) TMP36: Temp=25.11°C[0m
+[0;32mI (133567) TMP36: Temp=25.03°C[0m
+[0;32mI (134567) TMP36: Temp=24.70°C[0m
+[0;32mI (135567) TMP36: Temp=24.70°C[0m
+[0;32mI (135887) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (136567) TMP36: Temp=23.90°C[0m
+[0;32mI (137567) TMP36: Temp=24.54°C[0m
+[0;32mI (138567) TMP36: Temp=24.22°C[0m
+[0;32mI (139567) TMP36: Temp=24.54°C[0m
+[0;32mI (140567) TMP36: Temp=25.03°C[0m
+[0;32mI (141567) TMP36: Temp=25.03°C[0m
+[0;32mI (142567) TMP36: Temp=24.70°C[0m
+[0;32mI (143567) TMP36: Temp=25.03°C[0m
+[0;32mI (144567) TMP36: Temp=24.70°C[0m
+[0;32mI (145567) TMP36: Temp=25.03°C[0m
+[0;32mI (146567) TMP36: Temp=24.62°C[0m
+[0;32mI (147567) TMP36: Temp=25.27°C[0m
+[0;32mI (148567) TMP36: Temp=24.06°C[0m
+[0;32mI (149117) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (149567) TMP36: Temp=24.46°C[0m
+[0;32mI (150567) TMP36: Temp=24.70°C[0m
+[0;32mI (151567) TMP36: Temp=24.70°C[0m
+[0;32mI (152567) TMP36: Temp=24.70°C[0m
+[0;32mI (153567) TMP36: Temp=24.54°C[0m
+[0;32mI (154567) TMP36: Temp=24.70°C[0m
+[0;32mI (155567) TMP36: Temp=24.54°C[0m
+[0;32mI (156567) TMP36: Temp=24.38°C[0m
+[0;32mI (157567) TMP36: Temp=25.67°C[0m
+[0;32mI (158567) TMP36: Temp=25.19°C[0m
+[0;32mI (159567) TMP36: Temp=25.27°C[0m
+[0;32mI (160567) TMP36: Temp=25.19°C[0m
+[0;32mI (161567) TMP36: Temp=25.19°C[0m
+[0;32mI (162567) TMP36: Temp=24.78°C[0m
+[0;32mI (163567) TMP36: Temp=25.19°C[0m
+[0;32mI (164567) TMP36: Temp=25.03°C[0m
+[0;32mI (165567) TMP36: Temp=25.19°C[0m
+[0;32mI (166567) TMP36: Temp=24.70°C[0m
+[0;32mI (167567) TMP36: Temp=25.19°C[0m
+[0;32mI (168567) TMP36: Temp=25.27°C[0m
+[0;32mI (169567) TMP36: Temp=25.19°C[0m
+[0;32mI (170567) TMP36: Temp=25.27°C[0m
+[0;32mI (171567) TMP36: Temp=25.03°C[0m
+[0;32mI (172567) TMP36: Temp=25.19°C[0m
+[0;32mI (173567) TMP36: Temp=24.70°C[0m
+[0;32mI (174567) TMP36: Temp=25.03°C[0m
+[0;32mI (175567) TMP36: Temp=24.30°C[0m
+[0;32mI (176567) TMP36: Temp=25.35°C[0m
+[0;32mI (177567) TMP36: Temp=25.11°C[0m
+[0;32mI (178567) TMP36: Temp=25.27°C[0m
+[0;32mI (179567) TMP36: Temp=25.11°C[0m
+[0;32mI (180567) TMP36: Temp=25.27°C[0m
+[0;32mI (181567) TMP36: Temp=25.19°C[0m
+[0;32mI (182567) TMP36: Temp=25.03°C[0m
+[0;32mI (183567) TMP36: Temp=25.03°C[0m
+[0;32mI (184567) TMP36: Temp=24.70°C[0m
+[0;32mI (185567) TMP36: Temp=24.70°C[0m
+[0;32mI (186567) TMP36: Temp=25.03°C[0m
+[0;32mI (187567) TMP36: Temp=25.19°C[0m
+[0;32mI (188567) TMP36: Temp=25.35°C[0m
+[0;32mI (189567) TMP36: Temp=25.03°C[0m
+[0;32mI (190567) TMP36: Temp=25.11°C[0m
+[0;32mI (191567) TMP36: Temp=24.70°C[0m
+[0;32mI (192567) TMP36: Temp=25.35°C[0m
+[0;32mI (193567) TMP36: Temp=24.38°C[0m
+[0;32mI (194567) TMP36: Temp=25.35°C[0m
+[0;32mI (195567) TMP36: Temp=25.43°C[0m
+[0;32mI (196327) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (196567) TMP36: Temp=25.19°C[0m
+[0;32mI (197047) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (197567) TMP36: Temp=25.43°C[0m
+[0;32mI (198567) TMP36: Temp=25.51°C[0m
+[0;32mI (199567) TMP36: Temp=25.35°C[0m
+[0;32mI (200567) TMP36: Temp=25.19°C[0m
+[0;32mI (201567) TMP36: Temp=25.27°C[0m
+[0;32mI (202567) TMP36: Temp=25.35°C[0m
+[0;32mI (203567) TMP36: Temp=25.03°C[0m
+[0;32mI (204567) TMP36: Temp=25.83°C[0m
+[0;32mI (205567) TMP36: Temp=25.51°C[0m
+[0;32mI (206567) TMP36: Temp=25.35°C[0m
+[0;32mI (207567) TMP36: Temp=25.51°C[0m
+[0;32mI (208567) TMP36: Temp=25.67°C[0m
+[0;32mI (209567) TMP36: Temp=25.27°C[0m
+[0;32mI (210567) TMP36: Temp=24.70°C[0m
+[0;32mI (211567) TMP36: Temp=25.11°C[0m
+[0;32mI (212567) TMP36: Temp=25.43°C[0m
+[0;32mI (213567) TMP36: Temp=25.51°C[0m
+[0;32mI (214567) TMP36: Temp=25.51°C[0m
+[0;32mI (215567) TMP36: Temp=25.35°C[0m
+[0;32mI (216567) TMP36: Temp=25.03°C[0m
+[0;32mI (217567) TMP36: Temp=25.51°C[0m
+[0;32mI (218567) TMP36: Temp=25.51°C[0m
+[0;32mI (219567) TMP36: Temp=25.03°C[0m
+[0;32mI (220567) TMP36: Temp=25.11°C[0m
+[0;32mI (221567) TMP36: Temp=24.70°C[0m
+[0;32mI (222567) TMP36: Temp=24.38°C[0m
+[0;32mI (223567) TMP36: Temp=25.59°C[0m
+[0;32mI (224567) TMP36: Temp=25.67°C[0m
+[0;32mI (225567) TMP36: Temp=25.67°C[0m
+[0;32mI (226567) TMP36: Temp=25.67°C[0m
+[0;32mI (227567) TMP36: Temp=25.59°C[0m
+[0;32mI (228567) TMP36: Temp=25.75°C[0m
+[0;32mI (229567) TMP36: Temp=25.03°C[0m
+[0;32mI (230567) TMP36: Temp=24.70°C[0m
+[0;32mI (231567) TMP36: Temp=25.75°C[0m
+[0;32mI (232567) TMP36: Temp=25.67°C[0m
+[0;32mI (233567) TMP36: Temp=25.59°C[0m
+[0;32mI (233767) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (234567) TMP36: Temp=25.67°C[0m
+[0;32mI (235567) TMP36: Temp=25.51°C[0m
+[0;32mI (236567) TMP36: Temp=25.43°C[0m
+[0;32mI (237567) TMP36: Temp=25.35°C[0m
+[0;32mI (238567) TMP36: Temp=25.51°C[0m
+[0;32mI (239567) TMP36: Temp=25.35°C[0m
+[0;32mI (240567) TMP36: Temp=25.35°C[0m
+[0;32mI (241567) TMP36: Temp=25.51°C[0m
+[0;32mI (242567) TMP36: Temp=25.59°C[0m
+[0;32mI (243567) TMP36: Temp=25.51°C[0m
+[0;32mI (244567) TMP36: Temp=25.67°C[0m
+[0;32mI (245567) TMP36: Temp=25.67°C[0m
+[0;32mI (246567) TMP36: Temp=25.59°C[0m
+[0;32mI (247567) TMP36: Temp=25.67°C[0m
+[0;32mI (248567) TMP36: Temp=25.59°C[0m
+[0;32mI (249567) TMP36: Temp=24.14°C[0m
+[0;32mI (250567) TMP36: Temp=25.43°C[0m
+[0;32mI (251567) TMP36: Temp=25.59°C[0m
+[0;32mI (252567) TMP36: Temp=25.67°C[0m
+[0;32mI (253567) TMP36: Temp=25.51°C[0m
+[0;32mI (254567) TMP36: Temp=25.59°C[0m
+[0;32mI (255567) TMP36: Temp=25.43°C[0m
+[0;32mI (256567) TMP36: Temp=25.27°C[0m
+[0;32mI (257567) TMP36: Temp=25.35°C[0m
+[0;32mI (258567) TMP36: Temp=25.19°C[0m
+[0;32mI (259567) TMP36: Temp=25.11°C[0m
+[0;32mI (260567) TMP36: Temp=25.27°C[0m
+[0;32mI (261567) TMP36: Temp=25.51°C[0m
+[0;32mI (262567) TMP36: Temp=25.51°C[0m
+[0;32mI (263567) TMP36: Temp=25.51°C[0m
+[0;32mI (264567) TMP36: Temp=25.35°C[0m
+[0;32mI (265567) TMP36: Temp=25.35°C[0m
+[0;32mI (266567) TMP36: Temp=25.83°C[0m
+[0;32mI (267567) TMP36: Temp=25.51°C[0m
+[0;32mI (268567) TMP36: Temp=25.67°C[0m
+[0;32mI (269567) TMP36: Temp=25.67°C[0m
+[0;32mI (270567) TMP36: Temp=25.83°C[0m
+[0;32mI (271357) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (271567) TMP36: Temp=25.51°C[0m
+[0;32mI (271807) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (272017) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (272227) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (272567) TMP36: Temp=25.83°C[0m
+[0;32mI (273567) TMP36: Temp=25.51°C[0m
+[0;32mI (274567) TMP36: Temp=25.51°C[0m
+[0;32mI (275567) TMP36: Temp=25.51°C[0m
+[0;32mI (276567) TMP36: Temp=25.35°C[0m
+[0;32mI (277567) TMP36: Temp=25.19°C[0m
+[0;32mI (278567) TMP36: Temp=25.03°C[0m
+[0;32mI (279567) TMP36: Temp=27.28°C[0m
+[0;32mI (280567) TMP36: Temp=25.67°C[0m
+[0;32mI (281567) TMP36: Temp=25.67°C[0m
+[0;32mI (282567) TMP36: Temp=25.43°C[0m
+[0;32mI (283567) TMP36: Temp=25.67°C[0m
+[0;32mI (284567) TMP36: Temp=25.51°C[0m
+[0;32mI (285567) TMP36: Temp=25.67°C[0m
+[0;32mI (286567) TMP36: Temp=25.35°C[0m
+[0;32mI (287567) TMP36: Temp=25.27°C[0m
+[0;32mI (288567) TMP36: Temp=25.59°C[0m
+[0;32mI (289567) TMP36: Temp=25.35°C[0m
+[0;32mI (290567) TMP36: Temp=25.43°C[0m
+[0;32mI (291567) TMP36: Temp=25.35°C[0m
+[0;32mI (292567) TMP36: Temp=24.70°C[0m
+[0;32mI (293567) TMP36: Temp=25.11°C[0m
+[0;32mI (294567) TMP36: Temp=24.70°C[0m
+[0;32mI (295567) TMP36: Temp=24.78°C[0m
+[0;32mI (296567) TMP36: Temp=24.38°C[0m
+[0;32mI (297567) TMP36: Temp=24.06°C[0m
+[0;32mI (298567) TMP36: Temp=24.30°C[0m
+[0;32mI (299567) TMP36: Temp=24.62°C[0m
+[0;32mI (300567) TMP36: Temp=24.70°C[0m
+[0;32mI (301567) TMP36: Temp=24.78°C[0m
+[0;32mI (302567) TMP36: Temp=24.30°C[0m
+[0;32mI (303567) TMP36: Temp=24.54°C[0m
+[0;32mI (303577) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (304567) TMP36: Temp=24.46°C[0m
+[0;32mI (305077) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (305287) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (305497) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (305567) TMP36: Temp=24.54°C[0m
+[0;32mI (305677) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (305857) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (306037) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (306567) TMP36: Temp=24.54°C[0m
+[0;32mI (307567) TMP36: Temp=24.38°C[0m
+[0;32mI (308567) TMP36: Temp=24.70°C[0m
+[0;32mI (309567) TMP36: Temp=24.46°C[0m
+[0;32mI (310567) TMP36: Temp=24.38°C[0m
+[0;32mI (311567) TMP36: Temp=24.54°C[0m
+[0;32mI (312567) TMP36: Temp=24.54°C[0m
+[0;32mI (313567) TMP36: Temp=24.38°C[0m
+[0;32mI (314567) TMP36: Temp=24.30°C[0m
+[0;32mI (315567) TMP36: Temp=24.54°C[0m
+[0;32mI (316567) TMP36: Temp=24.14°C[0m
+[0;32mI (317567) TMP36: Temp=24.22°C[0m
+[0;32mI (318567) TMP36: Temp=24.06°C[0m
+[0;32mI (319567) TMP36: Temp=24.06°C[0m
+[0;32mI (320567) TMP36: Temp=24.38°C[0m
+[0;32mI (321567) TMP36: Temp=24.38°C[0m
+[0;32mI (322567) TMP36: Temp=24.38°C[0m
+[0;32mI (323567) TMP36: Temp=24.54°C[0m
+[0;32mI (324567) TMP36: Temp=24.54°C[0m
+[0;32mI (325567) TMP36: Temp=24.70°C[0m
+[0;32mI (326567) TMP36: Temp=24.70°C[0m
+[0;32mI (327567) TMP36: Temp=24.22°C[0m
+[0;32mI (328327) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (328567) TMP36: Temp=24.06°C[0m
+[0;32mI (328927) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (329567) TMP36: Temp=25.19°C[0m
+[0;32mI (330567) TMP36: Temp=25.27°C[0m
+[0;32mI (331567) TMP36: Temp=25.67°C[0m
+[0;32mI (332567) TMP36: Temp=25.51°C[0m
+[0;32mI (333567) TMP36: Temp=25.83°C[0m
+[0;32mI (334567) TMP36: Temp=26.32°C[0m
+[0;32mI (335567) TMP36: Temp=25.91°C[0m
+[0;32mI (336567) TMP36: Temp=25.91°C[0m
+[0;32mI (337567) TMP36: Temp=25.75°C[0m
+[0;32mI (338567) TMP36: Temp=25.75°C[0m
+[0;32mI (339567) TMP36: Temp=25.67°C[0m
+[0;32mI (340567) TMP36: Temp=25.59°C[0m
+[0;32mI (341567) TMP36: Temp=25.43°C[0m
+[0;32mI (342567) TMP36: Temp=25.99°C[0m
+[0;32mI (343567) TMP36: Temp=26.72°C[0m
+[0;32mI (344567) TMP36: Temp=26.32°C[0m
+[0;32mI (345567) TMP36: Temp=26.32°C[0m
+[0;32mI (346507) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (346567) TMP36: Temp=25.99°C[0m
+[0;32mI (347567) TMP36: Temp=26.48°C[0m
+[0;32mI (348567) TMP36: Temp=26.64°C[0m
+[0;32mI (349567) TMP36: Temp=25.59°C[0m
+[0;32mI (350567) TMP36: Temp=25.67°C[0m
+[0;32mI (351567) TMP36: Temp=25.51°C[0m
+[0;32mI (352567) TMP36: Temp=26.56°C[0m
+[0;32mI (353567) TMP36: Temp=26.32°C[0m
+[0;32mI (354567) TMP36: Temp=25.75°C[0m
+[0;32mI (355567) TMP36: Temp=25.51°C[0m
+[0;32mI (356567) TMP36: Temp=25.35°C[0m
+[0;32mI (357567) TMP36: Temp=24.70°C[0m
+[0;32mI (358567) TMP36: Temp=24.62°C[0m
+[0;32mI (359567) TMP36: Temp=24.70°C[0m
+[0;32mI (360567) TMP36: Temp=24.22°C[0m
+[0;32mI (361567) TMP36: Temp=24.22°C[0m
+[0;32mI (362567) TMP36: Temp=24.06°C[0m
+[0;32mI (363567) TMP36: Temp=23.82°C[0m
+[0;32mI (364567) TMP36: Temp=24.06°C[0m
+[0;32mI (365567) TMP36: Temp=23.98°C[0m
+[0;32mI (366567) TMP36: Temp=24.06°C[0m
+[0;32mI (367567) TMP36: Temp=23.90°C[0m
+[0;32mI (368567) TMP36: Temp=23.90°C[0m
+[0;32mI (369567) TMP36: Temp=23.25°C[0m
+[0;32mI (370227) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (370557) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (370567) TMP36: Temp=22.77°C[0m
+[0;32mI (370767) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (370977) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (371247) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (371397) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (371567) TMP36: Temp=23.33°C[0m
+[0;32mI (371607) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (371847) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (372027) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (372237) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (372477) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (372567) TMP36: Temp=23.33°C[0m
+[0;32mI (372987) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (373257) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (373407) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (373567) TMP36: Temp=23.17°C[0m
+[0;32mI (373617) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (373827) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (374007) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (374567) TMP36: Temp=23.09°C[0m
+[0;32mI (375567) TMP36: Temp=23.25°C[0m
+[0;32mI (376567) TMP36: Temp=23.25°C[0m
+[0;32mI (377567) TMP36: Temp=23.25°C[0m
+[0;32mI (378567) TMP36: Temp=23.09°C[0m
+[0;32mI (379567) TMP36: Temp=23.09°C[0m
+[0;32mI (380567) TMP36: Temp=23.09°C[0m
+[0;32mI (381567) TMP36: Temp=22.93°C[0m
+[0;32mI (382567) TMP36: Temp=22.21°C[0m
+[0;32mI (383567) TMP36: Temp=22.93°C[0m
+[0;32mI (384567) TMP36: Temp=22.69°C[0m
+[0;32mI (385567) TMP36: Temp=22.61°C[0m
+[0;32mI (385587) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (386567) TMP36: Temp=23.01°C[0m
+[0;32mI (387537) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (387567) TMP36: Temp=23.01°C[0m
+[0;32mI (387867) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (388077) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (388257) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (388497) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (388567) TMP36: Temp=22.77°C[0m
+[0;32mI (388647) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (388827) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (389037) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (389247) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (389427) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (389567) TMP36: Temp=22.93°C[0m
+[0;32mI (389637) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (389847) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (390027) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (390237) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (390417) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (390567) TMP36: Temp=22.77°C[0m
+[0;32mI (390627) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (390807) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (390987) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (391567) TMP36: Temp=22.93°C[0m
+[0;32mI (392567) TMP36: Temp=22.77°C[0m
+[0;32mI (393417) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (393567) TMP36: Temp=22.45°C[0m
+[0;32mI (393627) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (393837) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (394047) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (394257) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (394497) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (394567) TMP36: Temp=22.69°C[0m
+[0;32mI (394707) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (394887) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (395567) TMP36: Temp=22.69°C[0m
+[0;32mI (396567) TMP36: Temp=22.77°C[0m
+[0;32mI (397567) TMP36: Temp=22.93°C[0m
+[0;32mI (398567) TMP36: Temp=22.85°C[0m
+[0;32mI (399567) TMP36: Temp=22.77°C[0m
+[0;32mI (400567) TMP36: Temp=22.77°C[0m
+[0;32mI (401567) TMP36: Temp=22.85°C[0m
+[0;32mI (402567) TMP36: Temp=22.77°C[0m
+[0;32mI (403567) TMP36: Temp=22.61°C[0m
+[0;32mI (404567) TMP36: Temp=21.96°C[0m
+[0;32mI (405567) TMP36: Temp=22.61°C[0m
+[0;32mI (406567) TMP36: Temp=22.12°C[0m
+[0;32mI (407567) TMP36: Temp=22.77°C[0m
+[0;32mI (408567) TMP36: Temp=22.12°C[0m
+[0;32mI (409257) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (409567) TMP36: Temp=22.12°C[0m
+[0;32mI (410517) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (410567) TMP36: Temp=22.21°C[0m
+[0;32mI (410727) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (410877) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (411087) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (411237) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (411477) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (411567) TMP36: Temp=22.12°C[0m
+[0;32mI (411657) GATTS_DEMO: GATT_READ_EVT[0m
+[0;32mI (412567) TMP36: Temp=21.96°C[0m
+[0;32mI (413567) TMP36: Temp=22.61°C[0m
+[0;32mI (414567) TMP36: Temp=22.12°C[0m
+[0;32mI (415567) TMP36: Temp=21.80°C[0m
+[0;32mI (416567) TMP36: Temp=21.72°C[0m
+[0;32mI (417567) TMP36: Temp=22.12°C[0m
+[0;32mI (418567) TMP36: Temp=22.12°C[0m
+[0;32mI (419567) TMP36: Temp=22.12°C[0m
+[0;32mI (420567) TMP36: Temp=22.12°C[0m
+[0;32mI (421567) TMP36: Temp=22.12°C[0m
+[0;32mI (422567) TMP36: Temp=22.04°C[0m
+[0;32mI (423567) TMP36: Temp=21.96°C[0m
+[0;32mI (424567) TMP36: Temp=22.04°C[0m
+[0;32mI (425567) TMP36: Temp=21.96°C[0m
+[0;32mI (426567) TMP36: Temp=21.96°C[0m
+[0;32mI (427567) TMP36: Temp=22.04°C[0m
+[0;32mI (428567) TMP36: Temp=21.56°C[0m
+[0;32mI (429567) TMP36: Temp=21.80°C[0m
+[0;32mI (430567) TMP36: Temp=21.80°C[0m
+[0;32mI (431567) TMP36: Temp=21.96°C[0m
+[0;32mI (432567) TMP36: Temp=21.80°C[0m
+[0;32mI (433567) TMP36: Temp=21.80°C[0m
+[0;32mI (434567) TMP36: Temp=21.96°C[0m
+[0;32mI (435567) TMP36: Temp=21.40°C[0m
+[0;32mI (436567) TMP36: Temp=21.64°C[0m
+[0;32mI (437567) TMP36: Temp=21.80°C[0m
+[0;32mI (438567) TMP36: Temp=21.48°C[0m
+[0;32mI (439567) TMP36: Temp=21.48°C[0m
+[0;32mI (440567) TMP36: Temp=21.96°C[0m
+[0;32mI (441567) TMP36: Temp=21.96°C[0m
+[0;32mI (442567) TMP36: Temp=21.72°C[0m
+[0;32mI (443567) TMP36: Temp=21.80°C[0m
+[0;32mI (444567) TMP36: Temp=21.88°C[0m
+[0;32mI (445567) TMP36: Temp=21.80°C[0m
+[0;32mI (446567) TMP36: Temp=21.88°C[0m
+[0;32mI (447567) TMP36: Temp=21.96°C[0m
+[0;32mI (448567) TMP36: Temp=21.32°C[0m
+[0;32mI (449567) TMP36: Temp=21.32°C[0m
+[0;32mI (450567) TMP36: Temp=21.88°C[0m
+[0;32mI (451567) TMP36: Temp=21.80°C[0m
+[0;32mI (452567) TMP36: Temp=21.80°C[0m
+[0;32mI (453567) TMP36: Temp=21.64°C[0m
+[0;32mI (454567) TMP36: Temp=21.88°C[0m
+[0;32mI (455567) TMP36: Temp=21.80°C[0m
+[0;32mI (456567) TMP36: Temp=21.64°C[0m
+[0;32mI (457567) TMP36: Temp=21.72°C[0m
+[0;32mI (458567) TMP36: Temp=21.80°C[0m

@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/wissem/esp-idf/examples/bluetooth/bluedroid/ble/gatt_server/build/CMakeFiles/bootloader
+/home/wissem/esp-idf/examples/bluetooth/bluedroid/ble/gatt_server/build/CMakeFiles/bootloader.rule
+/home/wissem/esp-idf/examples/bluetooth/bluedroid/ble/gatt_server/build/CMakeFiles/bootloader-complete.rule
+/home/wissem/esp-idf/examples/bluetooth/bluedroid/ble/gatt_server/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/wissem/esp-idf/examples/bluetooth/bluedroid/ble/gatt_server/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/wissem/esp-idf/examples/bluetooth/bluedroid/ble/gatt_server/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/wissem/esp-idf/examples/bluetooth/bluedroid/ble/gatt_server/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/wissem/esp-idf/examples/bluetooth/bluedroid/ble/gatt_server/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/wissem/esp-idf/examples/bluetooth/bluedroid/ble/gatt_server/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/wissem/esp-idf/examples/bluetooth/bluedroid/ble/gatt_server/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
